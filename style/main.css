@@ -12,3 +12,62 @@ body{
     box-sizing: border-box;
     background-color: var(--color-bg);
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-one);
+}
+
+#logoHome{
+    margin-right: 5%;
+    background-color: #0f2;
+    padding: 22px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef0;
+    /* padding: 10px; */
+    list-style: none;
+}
+
+nav ul li{
+    background-color: #f0f;
+    padding: 22px;
+}
+
+nav ul li:hover{
+    background-color: #00fffb;
+}
+
+#linkRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9411;
+    overflow: hidden;
+}
+
+#linkRedes ul{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#linkRedes ul li a{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+#btnInscrevase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #f00;
+}
