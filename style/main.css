@@ -17,37 +17,39 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-one);
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-one);
 }
 
 #logoHome{
     margin-right: 5%;
-    background-color: #0f2;
+    color: var(--color-one);
     padding: 22px;
 }
 nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ef0;
-    /* padding: 10px; */
+    color: var(--color-one);
     list-style: none;
 }
 
 nav ul li{
-    background-color: #f0f;
     padding: 22px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-one);
 }
 
 nav ul li:hover{
-    background-color: #00fffb;
+    background-color: #00fffb6c;
 }
 
 #linkRedes{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff9411;
     overflow: hidden;
 }
 
@@ -61,6 +63,7 @@ nav ul li:hover{
 #linkRedes ul li a{
     margin-right: 15px;
     font-size: 20px;
+    color: var(--color-two);
 }
 
 #btnInscrevase{
@@ -69,5 +72,8 @@ nav ul li:hover{
     justify-content: center;
     padding: 10px;
     margin-right: 10px;
+    border-radius: 10px;
+    color: var(--color-one);
     background-color: #f00;
+    text-decoration: none;
 }
