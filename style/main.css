@@ -75,6 +75,7 @@ nav ul li a::after {
 nav ul li a:hover,
 nav ul li a.active{
     color: var(--color-two);
+    scale: 1.05;
 }
 
 nav ul li a:hover::after,
