@@ -19,14 +19,14 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-one);
+    border-bottom: 1px solid var(--color-two);
     font-family: var(--font-one);
 }
 
 #logoHome{
     text-decoration: none;
     font-size: 20px;
-    margin-right: 5%;
+    margin-right: 8%;
     color: var(--color-one);
     padding: 22px;
 }
@@ -34,7 +34,7 @@ header{
     color: var(--color-two);
 }
 nav{
-    margin-right: 5%;
+    margin-right: 8%;
 }
 nav ul{
     overflow: hidden;
@@ -86,6 +86,7 @@ nav ul li a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     overflow: hidden;
 }
 
