@@ -19,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-two);
+    border-bottom: 2px solid var(--color-one);
     font-family: var(--font-one);
 }
 
@@ -30,7 +30,7 @@ header{
     color: var(--color-one);
     padding: 22px;
 }
-#cor{
+.cor{
     color: var(--color-two);
 }
 nav{
@@ -127,4 +127,101 @@ nav ul li a.active::after {
 #btnInscrevase:hover{
     scale: 1.05;
     box-shadow: 1px 1px 15px #f00, 1px -1px 15px #fff;
+}
+
+/* ------------------------------------------ */
+
+main {
+    color: var(--color-one);
+    background-color: var(--color-bg);
+}
+
+/* Seção inicial */
+.inicio {
+    min-height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-image: url("/assets/Image/fundo_website_androgDev.jpg");
+}
+
+/* Texto */
+#texto_apresentacao {
+    display: flex;
+    justify-content: center;
+
+    font-family: var(--font-one);
+    text-align: left;
+}
+
+#caixa_titulos {
+    max-width: 500px;
+}
+
+#caixa_titulos h1 {
+    margin-bottom: 10px;
+}
+
+#caixa_titulos p {
+    margin-bottom: 20px;
+}
+
+/* Botão */
+#texto_apresentacao a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: var(--color-one);
+    color: var(--color-bg);
+
+    text-decoration: none;
+}
+
+/* Logo */
+#logo_oficial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_oficial img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 15px var(--color-bg);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#btnYT_assistir, #btnYT_videos{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#btnYT_assistir{
+    color: var(--color-one) !important;
+    background-color: #f00 !important;
+}
+
+#btnYT_assistir:hover{
+    scale: 1.05;
+    box-shadow: 1px 1px 15px #f00, 1px -1px 15px #fff;
+}
+
+#btnYT_videos{
+    border: 1px solid var(--color-one) !important;
+    color: var(--color-one) !important;
+    background-color: transparent !important;
+}
+
+#btnYT_videos:hover{
+    scale: 1.05;
+    border: 1px solid var(--color-bg);
+    color: var(--color-bg) !important;
+    background-color: var(--color-one) !important;
+    box-shadow: 1px 1px 15px #fff, 1px -1px 15px #fff;
 }
