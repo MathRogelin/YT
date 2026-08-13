@@ -19,7 +19,6 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg);
-    border-bottom: 2px solid var(--color-one);
     font-family: var(--font-one);
 }
 
@@ -143,14 +142,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-image: url("/assets/Image/fundo_website_androgDev.jpg");
+    background: linear-gradient(to right, var(--color-bg), var(--color-bg), transparent),
+    url("../assets/Image/fundo_website_androgDev.jpg");
 }
 
 /* Texto */
 #texto_apresentacao {
     display: flex;
     justify-content: center;
-
     font-family: var(--font-one);
     text-align: left;
 }
@@ -224,4 +223,66 @@ main {
     color: var(--color-bg) !important;
     background-color: var(--color-one) !important;
     box-shadow: 1px 1px 15px #fff, 1px -1px 15px #fff;
+}
+
+/* ================================================= */
+
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 40vh;
+    background-color: #000;
+}
+.caixa_sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-one);
+}
+.caixa_conteudo{
+    width: 80%;
+}
+.caixa_conteudo h2{
+    font-family: var(--font-one);
+}
+
+.caixa_conteudo p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.caixa_conteudo a{
+    display: inline-block;
+    margin: 10px auto auto 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-one);
+    background-color: var(--color-bg);
+    color: var(--color-one);
+
+    text-decoration: none;
+}
+
+#card_informacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    font-family: var(--font-one);
+    text-align: center;
+    object-fit: contain;
+    width: 25%;
+    padding: 50px 20px 50px 20px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 20px;
+    background-color: #020202;
+    /* border: 1px solid var(--color-one); */
+}
+
+.card i{
+    margin: 5px;
+    color: var(--color-two);
+    font-size: 30px;
 }
