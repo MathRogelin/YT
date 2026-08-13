@@ -275,10 +275,10 @@ main {
     object-fit: contain;
     width: 25%;
     padding: 50px 20px 50px 20px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 5px;
     border-radius: 20px;
     background-color: #020202;
-    /* border: 1px solid var(--color-one); */
+    border: 1px solid #222222;
 }
 
 .card i{
