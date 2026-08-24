@@ -243,6 +243,7 @@ main {
     width: 80%;
 }
 .caixa_conteudo h2{
+    margin-bottom: 5px;
     font-family: var(--font-one);
 }
 
@@ -253,14 +254,22 @@ main {
 
 .caixa_conteudo a{
     display: inline-block;
-    margin: 10px auto auto 15px;
+    margin: 15px auto auto 15px;
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid var(--color-one);
     background-color: var(--color-bg);
     color: var(--color-one);
+    transition: 0.3s;
 
     text-decoration: none;
+}
+
+.caixa_conteudo a:hover{
+    scale: 1.05;
+    color: var(--color-bg);
+    background-color: var(--color-one);
+    box-shadow: 1px 1px 15px #fff, 1px -1px 15px #fff;
 }
 
 #card_informacoes{
@@ -275,7 +284,7 @@ main {
     object-fit: contain;
     width: 25%;
     padding: 50px 20px 50px 20px;
-    margin: 0px 10px 0px 5px;
+    margin: 0px 20px 0px 5px;
     border-radius: 20px;
     background-color: #020202;
     border: 1px solid #222222;
@@ -285,4 +294,66 @@ main {
     margin: 5px;
     color: var(--color-two);
     font-size: 30px;
+}
+
+/* ======================================= */
+
+.destaques{
+    height: 50vh;
+}
+.destaques header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.destaques header h2{
+    margin-right: 60%;
+}
+
+.destaques header a{
+    color: var(--color-two);
+    text-decoration: none;
+}
+
+.card_videos{
+    height: 100%;
+}
+.conteiner_videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    height: 100%;
+}
+.videos{
+    font-family: var(--font-one);
+    position: relative;
+    padding: 20px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+    width: 25%;
+    height: 80%;
+    background-color: #040404;
+}
+.videos img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videos span{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    padding: 5px;
+    background-color: #040404;
+}
+.videos p{
+    color: var(--color-two);
+}
+
+/* ====================================== */
+
+footer{
+    height: 50vh;
 }
