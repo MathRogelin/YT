@@ -325,6 +325,7 @@ main {
     flex-direction: row;
     object-fit: cover;
     height: 100%;
+    margin-bottom: 50px;
 }
 .videos{
     font-family: var(--font-one);
@@ -356,4 +357,5 @@ main {
 
 footer{
     height: 50vh;
+    background-color: var(--color-two);
 }
