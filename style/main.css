@@ -22,6 +22,27 @@ header{
     font-family: var(--font-one);
 }
 
+/* Largura da barra */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+/* Parte que você arrasta */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 0px;
+}
+
+/* Ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-two);
+}
+
 #logoHome{
     text-decoration: none;
     font-size: 20px;
@@ -295,67 +316,34 @@ main {
     color: var(--color-two);
     font-size: 30px;
 }
+/* =============================== */
 
-/* ======================================= */
-
-.destaques{
+footer{
+    color: #fff;
     height: 50vh;
-}
-.destaques header{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.destaques header h2{
-    margin-right: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--font-one);
 }
 
-.destaques header a{
-    color: var(--color-two);
-    text-decoration: none;
-}
-
-.card_videos{
-    height: 100%;
-}
-.conteiner_videos{
+.secoes_rodape{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    object-fit: cover;
-    height: 100%;
-    margin-bottom: 50px;
+    background-color: #010101;
+    object-fit: contain;
 }
-.videos{
-    font-family: var(--font-one);
-    position: relative;
+
+.secoes_rodape p,a,li{
+    color: #555;
+    list-style: none;
+    text-decoration: none;
+}
+
+#navegacao, #conteudo, #contato{
+    width: auto;
     padding: 20px;
-    margin: 0px 5px 0px 5px;
-    border-radius: 10px;
-    width: 25%;
-    height: 80%;
-    background-color: #040404;
-}
-.videos img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.videos span{
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    padding: 5px;
-    background-color: #040404;
-}
-.videos p{
-    color: var(--color-two);
-}
-
-/* ====================================== */
-
-footer{
-    height: 50vh;
-    background-color: var(--color-two);
+    height: 50%;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
 }
